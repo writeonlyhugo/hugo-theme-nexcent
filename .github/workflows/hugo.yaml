@@ -30,7 +30,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.108.0
+      HUGO_VERSION: 0.117.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -42,7 +42,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Install Node.js Dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: "cd hugoBasicExample && [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
