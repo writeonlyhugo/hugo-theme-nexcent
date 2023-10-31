@@ -1,0 +1,16 @@
+enable: true
+
+title: "Hero Block"
+subtitle: >
+  Lorem ipsum Amet aliquid nesciunt quia blanditiis nesciunt. Adipisci dolores
+  laboriosam reiciendis quas amet. Deleniti rem repellat quos accusamus quae,
+  quia quia Sint quas fugiat nobis natus corrupti. Consequatur id temporibus
+  laborum.
+
+buttonPrimary:
+  label: "Lorem Ipsum"
+  link: "#"
+
+buttonSecondary:
+  label: "Lorem Ipsum"
+  link: "#"

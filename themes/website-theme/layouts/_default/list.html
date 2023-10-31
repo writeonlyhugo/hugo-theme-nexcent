@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <main class="prose mx-auto px-4">
+    <h1 class="mb-8 text-center text-4xl">{{ .Title }}</h1>
+    <ul class="px-0">
+      {{ range .Paginator.Pages }}
+        <li class="flex items-center justify-between">
+          <a class="my-0 text-blue-400 hover:to-blue-500" href="{{ .Permalink }}">{{ .Title }}</a>
+          {{ with .Date }}
+            <span class="my-0">{{ .Format "Jan 2, 2006" }}</span>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  </main>
+  <div class="flex items-center justify-center pt-8">
+    {{ partial "shared/pagination.html" . }}
+  </div>
+{{ end }}
